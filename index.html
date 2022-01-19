@@ -52,7 +52,7 @@
 
             <!-- Breve descripcion de la pasion por el gin.
         el fondo sería un slider/carousel. Texto fijo -->
-            <p class="parrafo-home">
+            <p class="parrafo-home animacion-home">
                 GinHouse es una boedga boutique en el de la Ciudad de Buenos Aires, en la calle INSERTE DIRECCION, donde
                 se
                 entiende al gin como cultura, conocimiento, placer y encuentro. Atendida por sus dueños, INSERTE NOMBRES
@@ -86,7 +86,7 @@
             <!-- probablemente un carousel con más videos de las reviews en YT usando una playlist-->
 
 
-            <div class="container-video grid-item1">
+            <div class="container-video grid-item1 animacion-review-left">
                 <iframe class="review-video" src="https://www.youtube.com/embed/KaD7zCHyopQ"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -94,7 +94,7 @@
                 </iframe>
             </div>
 
-            <div class="container-video grid-item2">
+            <div class="container-video grid-item2 animacion-review-right">
                 <iframe class="review-video" src="https://www.youtube.com/embed/HC_ZFR1DQV0"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -102,15 +102,15 @@
                 </iframe>
             </div>
 
-            <div class="container-video grid-item3">
-                <iframe class="review-video" src="https://www.youtube.com/embed/6gA_d8xmAeQ"
+            <div class="container-video grid-item3 animacion-review-left">
+                <iframe class="review-video " src="https://www.youtube.com/embed/6gA_d8xmAeQ"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
 
-            <div class="container-video grid-item4">
+            <div class="container-video grid-item4 animacion-review-right">
                 <iframe class="review-video" src="https://www.youtube.com/embed/D-ac3dU7XY8"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;           picture-in-picture"
@@ -128,13 +128,39 @@
             <h2 class="titulo">Productos</h2>
 
 
-            <div class="container-producto-home grid-producto1">
-                <a href="./src/views/gins.html"><img src="./src/assets/img/gins.jpg"
-                        alt="Gins Nacionales e Importados"></a>
+            <div class="container-producto-home grid-producto1 flip-box"><a href="./src/views/gins.html">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="./src/assets/img/gins.jpg" alt="Gins Nacionales e Importados">
+                        </div>
+                        <div class="flip-box-back">
+
+                            <h2>Gins</h2>
+                            <p>Contamos con la mayor variedad de Gins Nacionales e Importados. También traemos productos
+                                a
+                                pedido de nuestros clientes. Somos los importadores oficiales de muchas marcas de
+                                renombre a
+                                nivel internacional</p>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <div class="container-producto-home grid-producto2">
-                <a href="./src/views/tonicas.html"><img src="./src/assets/img/tonicas.jpg" alt="Aguas tonicas"></a>
+            <div class="container-producto-home grid-producto2 flip-box">
+                <a href="./src/views/tonicas.html">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="./src/assets/img/tonicas.jpg" alt="Aguas tonicas">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Tonicas</h2>
+                            <p>Trabajamos con las marcas más importantes del mercado internacional. Somos importadores
+                                oficiales tanto de Britvic como de Fever Tree. Contamos con una amplia variedad de
+                                tónicas
+                                nacionales de alta calidad</p>
+                        </div>
+                    </div>
+                </a>
             </div>
 
             <!-- Slider de productos más vendidos -->
@@ -158,7 +184,7 @@
                 <!-- <img src="fotoEvento3.jpg" alt="Cata Gin"> -->
             </div>
 
-            <div class="parrafo-eventos">
+            <div class="parrafo-eventos animacion-home">
                 <h3>Forma parte de nuestros eventos</h3>
 
                 <p> Todos los meses aprendemos y disfrutamos de catas guiadas, con la participación de gin crafters de
