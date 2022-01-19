@@ -276,6 +276,39 @@ header nav ul li a {
   }
 }
 
+/* Animaciones */
+
+.animacion-review-left{
+  animation: myAnimL 3s ease-in 0s 1 normal forwards;
+}
+
+
+@keyframes myAnimL {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animacion-review-right{
+  animation: myAnimR 3s ease-in 0s 1 normal forwards;
+}
+@keyframes myAnimR {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 #productos {
   background-color: Rgb(143, 150, 189);
   min-height: 100vh;
