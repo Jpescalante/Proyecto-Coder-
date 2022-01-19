@@ -87,9 +87,12 @@ header nav ul li a {
     font-size: 1em;
     border: none;
   }
+  
+  
   .abrir {
-    position: relative;
+    position: absolute;
     display: inline-block;
+    margin-left: 5%;
   }
   .menu-bar {
     display: none;
