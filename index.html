@@ -5,271 +5,378 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="src/style.css">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Bootsrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Proyecto Coderhouse</title>
 </head>
 
 <body>
 
     <header>
-        <nav class="menu">
-            <!-- logo y nombre del sitio  -->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="./src/assets/img/logo.png" alt="GinHouse">
-                </a>
 
-            </div>
-            <div class="abrir">
-                <button class="desplegable">Menu</button>
-                <div class="menu-bar">
-                    <!-- menu de navegacion -->
-                    <ul class="grid-list">
-                        <li class="grid-list-item"> <a href="#homePage"> Home</li></a>
-                        <li class="grid-list-item"> <a href="#reviews">Reviews</a></li>
-                        <li class="grid-list-item"> <a href="#productos">Productos</a></li>
-                        <li class="grid-list-item"> <a href="#eventos">Eventos y Catas</a></li>
-                        <li class="grid-list-item"> <a href="src/views/contact.html">Contacto</a></li>
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-xl navbar-dark bg-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./src/assets/img/logo.png" alt="GinHouse" width="50%"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                    aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show" id="navbarDark">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#homePage">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#eventos">Eventos y Catas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="src/views/contact.html">Contacto</a>
+                        </li>
                     </ul>
+
                 </div>
             </div>
-
-
-            <!-- falta searchbox y carrito de compras -->
         </nav>
     </header>
 
-    <div class="container-elementos">
-        <!-- Primer seccion Home o Quienes somos -->
 
-        <section id="homePage" class="grid-container-home">
+    <!-- Primer seccion Home -->
 
-            <h2 class="titulo"> Sobre nosotros</h2>
-
-            <!-- Breve descripcion de la pasion por el gin.
-        el fondo sería un slider/carousel. Texto fijo -->
-            <p class="parrafo-home animacion-home">
-                GinHouse es una boedga boutique en el de la Ciudad de Buenos Aires, en la calle INSERTE DIRECCION, donde
-                se
-                entiende al gin como cultura, conocimiento, placer y encuentro. Atendida por sus dueños, INSERTE NOMBRES
-                quienes proponen un trato diferente y personalizado. En este lugar donde el profesionalismo y la pasión
-                por
-                el Gin se combinan por igual, cada persona que ingresa está invitada a conocer una cuidada selección de
-                más
-                de xxx etiquetas de Argentina y del mundo en constante actualización. Se suman catas semanales con
-                expertos
-                del país y del exterior y cursos. Así, desde su apertura en diciembre de 2021, público local y
-                extranjero ha
-                transitado una y otra vez por la experiencia del vino desde la visión comprometida de GinHouse con su
-                inconfundible sello de búsqueda, calidad, información y ética. Los esperamos para seguir juntos forjando
-                y
-                recorriendo este fascinante camino.
-            </p>
-
-        </section>
+    <section id="homePage">
 
 
-        <!-- fin primer seccion -->
-
-
-        <!-- comienzo segunda sección -->
-
-
-        <section id="reviews" class="grid-container-reviews">
-
-            <h2 class="titulo">Reviews</h2>
-
-            <!-- probablemente un carousel con más videos de las reviews en YT usando una playlist-->
-
-
-            <div class="container-video grid-item1 animacion-review-left">
-                <iframe class="review-video" src="https://www.youtube.com/embed/KaD7zCHyopQ"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+        <div class="container">
+            <div class="row">
+                <h2 class="titulo"> Sobre nosotros</h2>
             </div>
+            <div class="row">
 
-            <div class="container-video grid-item2 animacion-review-right">
-                <iframe class="review-video" src="https://www.youtube.com/embed/HC_ZFR1DQV0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+                <div class="col">
+                    <p class="parrafo-home animacion-home">
+                        GinHouse es una boedga boutique en el de la Ciudad de Buenos Aires, en la calle INSERTE
+                        DIRECCION, donde
+                        se
+                        entiende al gin como cultura, conocimiento, placer y encuentro. Atendida por sus dueños,
+                        INSERTE NOMBRES
+                        quienes proponen un trato diferente y personalizado. En este lugar donde el profesionalismo
+                        y la pasión
+                        por
+                        el Gin se combinan por igual, cada persona que ingresa está invitada a conocer una cuidada
+                        selección de
+                        más
+                        de xxx etiquetas de Argentina y del mundo en constante actualización. Se suman catas
+                        semanales con
+                        expertos
+                        del país y del exterior y cursos. Así, desde su apertura en diciembre de 2021, público local
+                        y
+                        extranjero ha
+                        transitado una y otra vez por la experiencia del vino desde la visión comprometida de
+                        GinHouse con su
+                        inconfundible sello de búsqueda, calidad, información y ética. Los esperamos para seguir
+                        juntos forjando
+                        y
+                        recorriendo este fascinante camino.
+                    </p>
+                </div>
+
             </div>
+        </div>
 
-            <div class="container-video grid-item3 animacion-review-left">
-                <iframe class="review-video " src="https://www.youtube.com/embed/6gA_d8xmAeQ"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+
+    </section>
+
+
+    <!-- fin primer seccion -->
+
+
+    <!-- comienzo segunda sección -->
+
+
+    <section id="reviews">
+
+        <div class="container">
+            <div class="row">
+                <h2 class="titulo">Reviews</h2>
             </div>
-
-            <div class="container-video grid-item4 animacion-review-right">
-                <iframe class="review-video" src="https://www.youtube.com/embed/D-ac3dU7XY8"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;           picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-
-        </section>
-
-        <!-- fin segunda seccion -->
-
-        <!-- comienzo tercera seccion -->
-
-        <section id="productos" class="grid-container-productos">
-            <h2 class="titulo">Productos</h2>
-
-
-            <div class="container-producto-home grid-producto1 flip-box"><a href="./src/views/gins.html">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img src="./src/assets/img/gins.jpg" alt="Gins Nacionales e Importados">
-                        </div>
-                        <div class="flip-box-back">
-
-                            <h2>Gins</h2>
-                            <p>Contamos con la mayor variedad de Gins Nacionales e Importados. También traemos productos
-                                a
-                                pedido de nuestros clientes. Somos los importadores oficiales de muchas marcas de
-                                renombre a
-                                nivel internacional</p>
-                        </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="container-video  animacion-review-left">
+                        <iframe class="review-video" src="https://www.youtube.com/embed/KaD7zCHyopQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
                     </div>
-                </a>
-            </div>
-
-            <div class="container-producto-home grid-producto2 flip-box">
-                <a href="./src/views/tonicas.html">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img src="./src/assets/img/tonicas.jpg" alt="Aguas tonicas">
-                        </div>
-                        <div class="flip-box-back">
-                            <h2>Tonicas</h2>
-                            <p>Trabajamos con las marcas más importantes del mercado internacional. Somos importadores
-                                oficiales tanto de Britvic como de Fever Tree. Contamos con una amplia variedad de
-                                tónicas
-                                nacionales de alta calidad</p>
-                        </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="container-video  animacion-review-right">
+                        <iframe class="review-video" src="https://www.youtube.com/embed/HC_ZFR1DQV0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
                     </div>
-                </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="container-video  animacion-review-left">
+                        <iframe class="review-video " src="https://www.youtube.com/embed/6gA_d8xmAeQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="container-video animacion-review-right">
+                        <iframe class="review-video" src="https://www.youtube.com/embed/D-ac3dU7XY8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;           picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <!-- fin segunda seccion -->
+
+    <!-- comienzo tercera seccion -->
+
+    <section id="productos">
+
+        <div class="container">
+            <div class="row">
+                <h2 class="titulo">Productos</h2>
             </div>
 
-            <!-- Slider de productos más vendidos -->
-        </section>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 container-producto">
+                    <div class="flip-box"><a href="./src/views/gins.html">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img src="./src/assets/img/gins.jpg" alt="Gins Nacionales e Importados" width="80%">
+                                </div>
+                                <div class="flip-box-back">
 
-        <!-- fin tercera seccion -->
-
-        <!-- comienzo cuarta seccion -->
-
-
-        <section id="eventos" class="grid-eventos">
-
-            <h2 class="titulo">Eventos y Catas</h2>
-
-
-
-            <div class="carrousel-eventos">
-                <!-- esto seria un carousel de imagenes -->
-                <img src="./src/assets/img/Cata-de-Gin1.jpg" alt="Cata Gin">
-                <!-- <img src="./src/assets/img/Cata-de-Gin2.jpg" alt="Cata Gin "width="350"> -->
-                <!-- <img src="fotoEvento3.jpg" alt="Cata Gin"> -->
-            </div>
-
-            <div class="parrafo-eventos animacion-home">
-                <h3>Forma parte de nuestros eventos</h3>
-
-                <p> Todos los meses aprendemos y disfrutamos de catas guiadas, con la participación de gin crafters de
-                    todo el país. Así pasan por la bodega grandes especialistas que bien saben deleitarnos con sus
-                    saberes y experiencia.
-
-                    En general, acompañamos la degustación con quesos, fiambres y bruschettas. Siempre con reserva
-                    previa y mesas compartidas, estas charlas con degustación son un espacio de auténtica exploración de
-                    los sentidos: para encontrarnos con el Gin de otra manera, conocer novedades y ampliar nuestra
-                    pasión por el Ging, sin que falte algo tan importante como es saber compartirlo.
-
-                    También ofrecemos la posibilidad de realizar degustaciones privadas con distintas propuestas que se
-                    adaptan a tus celebraciones.
-
-                    Contactanos!
-                    <!-- Posible boton -->
-                </p>
-            </div>
-
-
-        </section>
-
-        <!-- fin cuarta seccion -->
-
-
-        <footer>
-
-            <div class="grid-footer">
-
-                <nav class="redes-sociales">
-                    <!-- Iconos con links de rrss y contacto -->
-                    <h4>Nuestros medios de contacto</h4>
-                    <ul>
-                        <li class="icono"><a href="https://www.instagram.com/" target="_blank"><img
-                                    src="./src/assets/img/instagram.png" alt="Instagram" width="30"></a>@GinHouse</li>
-                        <li class="icono"><a href="https://facebook.com" target="_blank"> <img
-                                    src="./src/assets/img/facebook.png" alt="Facebook" width="30"></a>
-                            facebook.com/GinHouse
-                        </li>
-                        <li class="icono"><a href="mailto:ginhouse@ginhouse.com"><img src="./src/assets/img/gmail.png"
-                                    alt="Mail" width="30"></a> ginhouse@ginhouse.com</li>
-                        <li class="icono"><img src="./src/assets/img/telephone-call.png" alt="Numero de telefono"
-                                width="30">4444-5555/2222</li>
-                    </ul>
-
-                </nav>
-
-
-
-
-                <div class="medios-pago">
-                    <!-- Medios de pago -->
-
-                    <h4>Medios de pago</h4>
-
-                    <div class="container-pago">
-                        <img class="icono-pago" src="./src/assets/img/visa.png" alt="Visa" width="30">
-                        <img class="icono-pago" src="./src/assets/img/transferencia-bancaria.png"
-                            alt="Transferencia Bancaria" width="30">
-                        <img class="icono-pago" src="./src/assets/img/mercado-pago.png" alt="Mercado Pago" width="30">
-                        <img class="icono-pago" src="./src/assets/img/amex.png" alt="American Express" width="30">
-                        <img class="icono-pago" src=" " alt="Efectivo" width="30">
+                                    <h2>Gins</h2>
+                                    <p>Contamos con la mayor variedad de Gins Nacionales e Importados. También traemos
+                                        productos
+                                        a
+                                        pedido de nuestros clientes. Somos los importadores oficiales de muchas marcas
+                                        de
+                                        renombre a
+                                        nivel internacional</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
-
-                <div class="datos-contacto">
-                    <!-- direccion y horario -->
-
-                    <p> Balcarce 50, Ciudad Autónoma de Buenos Aires</p>
-                    <p> CP 1222</p>
-                    <p>Horario de atención:</p>
-                    <p> L- V 9:00 - 20:00 hs.</p>
-                    <p>Sab 10:00 -20:00 hs.</p>
-
+                <div class="col-sm-12 col-md-12 col-lg-6 container-producto">
+                    <div class="flip-box">
+                        <a href="./src/views/tonicas.html">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img src="./src/assets/img/tonicas.jpg" alt="Aguas tonicas" width="80%">
+                                </div>
+                                <div class="flip-box-back">
+                                    <h2>Tonicas</h2>
+                                    <p>Trabajamos con las marcas más importantes del mercado internacional. Somos
+                                        importadores
+                                        oficiales tanto de Britvic como de Fever Tree. Contamos con una amplia variedad
+                                        de
+                                        tónicas
+                                        nacionales de alta calidad</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-
-
+                <!-- Slider de productos más vendidos -->
+            </div>
+            <div class="row">
 
             </div>
+        </div>
+
+        </div>
 
 
-        </footer>
-    </div>
 
+
+    </section>
+
+    <!-- fin tercera seccion -->
+
+    <!-- comienzo cuarta seccion -->
+
+
+    <section id="eventos">
+
+        <div class="container">
+            <div class="row">
+                <h2 class="titulo">Eventos y Catas</h2>
+            </div>
+            <div class="row">
+                <div id="carouselSlidesOnly" class="carousel slide"
+                    data-bs-ride=" carousel">
+                    <div class="col-sm-12 col-md-12 col-lg-6 carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./src/assets/img/eventos-slider1.jpg" class="d-block w-50" alt="Cata Gin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./src/assets/img/eventos-slider2.jpg" class="d-block w-50" alt="Slide 2">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+
+                    <div class="parrafo-eventos animacion-home">
+                        <h3>Forma parte de nuestros eventos</h3>
+
+                        <p> Todos los meses aprendemos y disfrutamos de catas guiadas, con la participación de gin
+                            crafters
+                            de
+                            todo el país. Así pasan por la bodega grandes especialistas que bien saben deleitarnos con
+                            sus
+                            saberes y experiencia.
+
+                            En general, acompañamos la degustación con quesos, fiambres y bruschettas. Siempre con
+                            reserva
+                            previa y mesas compartidas, estas charlas con degustación son un espacio de auténtica
+                            exploración de
+                            los sentidos: para encontrarnos con el Gin de otra manera, conocer novedades y ampliar
+                            nuestra
+                            pasión por el Ging, sin que falte algo tan importante como es saber compartirlo.
+
+                            También ofrecemos la posibilidad de realizar degustaciones privadas con distintas propuestas
+                            que
+                            se
+                            adaptan a tus celebraciones.
+
+                            Contactanos!
+                            <!-- Posible boton -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- fin cuarta seccion -->
+
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+
+                    <nav class="redes-sociales">
+                        <!-- Iconos con links de rrss y contacto -->
+                        <h4>Nuestros medios de contacto</h4>
+                        <ul>
+                            <li class="icono"><a href="https://www.instagram.com/" target="_blank"><img
+                                        src="./src/assets/img/instagram.png" alt="Instagram" width="30"></a>@GinHouse
+                            </li>
+                            <li class="icono"><a href="https://facebook.com" target="_blank"> <img
+                                        src="./src/assets/img/facebook.png" alt="Facebook" width="30"></a>
+                                facebook.com/GinHouse
+                            </li>
+                            <li class="icono"><a href="mailto:ginhouse@ginhouse.com"><img
+                                        src="./src/assets/img/gmail.png" alt="Mail" width="30"></a>
+                                ginhouse@ginhouse.com</li>
+                            <li class="icono"><img src="./src/assets/img/telephone-call.png" alt="Numero de telefono"
+                                    width="30">4444-5555/2222</li>
+                        </ul>
+
+                    </nav>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="medios-pago">
+                        <!-- Medios de pago -->
+
+                        <h4>Medios de pago</h4>
+
+                        <div class="container-pago">
+                            <img class="icono-pago" src="./src/assets/img/visa.png" alt="Visa" width="30">
+                            <img class="icono-pago" src="./src/assets/img/transferencia-bancaria.png"
+                                alt="Transferencia Bancaria" width="30">
+                            <img class="icono-pago" src="./src/assets/img/mercado-pago.png" alt="Mercado Pago"
+                                width="30">
+                            <img class="icono-pago" src="./src/assets/img/amex.png" alt="American Express" width="30">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="datos-contacto">
+                        <!-- direccion y horario -->
+
+                        <p> Balcarce 50, Ciudad Autónoma de Buenos Aires</p>
+                        <p> CP 1222</p>
+                        <p>Horario de atención:</p>
+                        <p> L- V 9:00 - 20:00 hs.</p>
+                        <p>Sab 10:00 -20:00 hs.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
