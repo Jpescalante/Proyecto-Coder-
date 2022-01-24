@@ -19,6 +19,14 @@ header nav div a img {
   font-weight: bold;
 }
 
+@media (min-width: 1200px) {
+  .navbar li {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 10px;
+  }
+}
+
 #homePage {
   background-image: url("./assets/img/background-home-grande.jpg");
   background-repeat: no-repeat;
@@ -49,14 +57,13 @@ header nav div a img {
   margin-left: 40%;
 }
 
-@media screen and (max-width: 992px){
-.parrafo-home{
-  margin-left:auto;
-}
+@media screen and (max-width: 992px) {
+  .parrafo-home {
+    margin-left: auto;
+  }
 }
 
 .animacion-home {
- 
   -webkit-animation: fadein 4s;
   -moz-animation: fadein 4s;
 
@@ -212,7 +219,7 @@ header nav div a img {
 }
 
 #eventos {
-  background-image: url("./assets/img/background-eventos-grande.jpg");  
+  background-image: url("./assets/img/background-eventos-grande.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -221,8 +228,7 @@ header nav div a img {
   background-color: black;
 }
 
-
-.parrafo-eventos{
+.parrafo-eventos {
   background-color: rgba(143, 150, 189, 0.9);
   padding: 15px 15px 15px 15px;
   color: rgb(233, 233, 233);
@@ -235,31 +241,144 @@ header nav div a img {
   margin-left: 55%;
   margin-bottom: 5%;
 }
-@media screen and (max-width: 992px){
-  .parrafo-eventos{
+@media screen and (max-width: 992px) {
+  .parrafo-eventos {
     margin-left: auto;
     margin-top: 0;
   }
-  #carouselSlidesOnly{
-    display:none;
+  #carouselSlidesOnly {
+    display: none;
+  }
+}
+h3 {
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: #010303;
+}
 
-  }
-  }
-  h3 {
-    text-align: center;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    color: #010303;
-  }
-  
-  h4 {
-    color: rgb(233 233 233);
-    padding-bottom: 0.5em;
-  }
+h4 {
+  color: rgb(233 233 233);
+  padding-bottom: 0.5em;
+}
 
-    footer {
-      background: linear-gradient(rgb(0, 0, 0), rgba(14, 12, 12, 0.828));  
-              
-      font-size: 1rem;
-      color: white;
-    }
+footer {
+  background: linear-gradient(rgb(0, 0, 0), rgba(14, 12, 12, 0.828));
+
+  font-size: 1rem;
+  color: white;
+}
+
+/* Contacto */
+
+#pagina-contacto {
+  background-image: url("../src/assets/img/background-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Productos */
+
+#pagina-productos {
+  background-image: url("./assets/img/background-reviews-grande.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.container-producto {
+  margin-bottom: 3%;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.img-producto {
+  width: 100%;
+  display: block;
+}
+.img-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contenido-producto {
+  background-color: rgba(143, 150, 189, 0.6);
+  padding: 3rem 0.5rem 2rem 0.5rem;
+  cursor: pointer;
+}
+.img-container {
+  background-color: white;
+  padding: 3rem 0.5rem 2rem 0.5rem;
+  cursor: pointer;
+}
+.img-producto {
+  background-color: white;
+  box-shadow: 0 0 20px 10px rgb(77, 68, 73);
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.boton-producto {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.4rem;
+  opacity: 1;
+}
+.boton-cart,
+.boton-comprar {
+  background: transparent border 1px solid black;
+  padding: 0.8rem 0;
+  width: 125px;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+.boton-cart {
+  background-color: black;
+  color: white;
+}
+.boton-cart :hover {
+  background: yellowgreen;
+}
+.boton-comprar :hover {
+  background: violet;
+  color: white;
+}
+.producto-info {
+  background: rgb(211, 213, 219);
+  padding: 2rem;
+}
+.producto-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.producto-nombre {
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.producto-precio {
+  padding-top: 0.6rem;
+  padding-right: 0.6rem;
+  display: inline-block;
+}
