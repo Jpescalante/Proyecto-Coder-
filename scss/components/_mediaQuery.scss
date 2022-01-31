@@ -1,0 +1,21 @@
+@media (min-width: 1200px) {
+    .navbar li {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      padding-top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .parrafo-home {
+      margin-left: auto;
+    }
+    .parrafo-eventos {
+      margin-left: auto;
+      margin-top: 0;
+    }
+    .container-carousel,.titulo-carousel{
+      display: none;
+    }
+  }
+

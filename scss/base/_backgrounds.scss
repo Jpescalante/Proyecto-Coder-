@@ -1,0 +1,26 @@
+#homePage {
+    background-image: url("../src/assets/img/background-home-grande.jpg");
+    @extend %background-section;
+}
+
+#reviews {
+    background-image: url("../src/assets/img/background-reviews-grande.jpg");
+    @extend %background-section;
+}
+
+#productos {
+    background-image: url("../src/assets/img/background-productos-grande.jpg");
+    @extend %background-section;
+}
+#eventos {
+    background-image: url("../src/assets/img/background-eventos-grande.jpg");
+    @extend %background-section;
+}
+#pagina-contacto {
+    background-image: url("../src/assets/img/background-home-grande.jpg");
+    @extend %background-section;
+}
+#pagina-productos {
+    background-image: url("../src/assets/img/background-reviews-grande.jpg");
+    @extend %background-section;
+}

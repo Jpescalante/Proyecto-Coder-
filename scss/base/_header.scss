@@ -1,0 +1,24 @@
+header {
+  nav {
+    background: linear-gradient(rgb(0, 0, 0), rgba(14, 12, 12, 0.828));
+    div {
+      a {
+        img {
+          max-height: 7rem;
+          margin-left: 1em;
+        }
+      }
+      ul {
+        li {
+          &:hover {
+            color: #f4f8fa;
+            background: #857f7f9a;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+

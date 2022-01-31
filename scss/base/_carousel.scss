@@ -1,0 +1,99 @@
+.container-carousel {
+    
+  justify-content: center;
+  display: flex;
+   
+  margin-bottom: 2rem;
+  }
+  
+  .card {
+    display: flex;
+    height: 20rem;
+    width: 15rem;
+    background: linear-gradient(rgb(0, 0, 0), rgba(14, 12, 12, 0.628));
+    border-radius: 6px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    left: 0px;
+    img{
+      max-width: 360px;
+      max-height: auto;
+
+    }
+  }
+  
+  .card:not(:first-child) {
+      margin-left: -2rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-2rem);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 3rem;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 2rem;
+    top: 1.8rem;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+    height: 0.3rem;
+    width: 10rem;
+  }
+  
+  .emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+  }
+  
+  .card:hover .filledbar {
+    width: 120px;
+    transition: 0.4s ease-out;
+  }
+  
+  .item {
+    position: absolute;
+    top: 5rem;
+    left: calc(50% - 3.7rem);
+  }
+  
+  // .stroke {
+  //   stroke: white;
+  //   stroke-dasharray: 360;
+  //   stroke-dashoffset: 360;
+  //   transition: 0.6s ease-out;
+  // }
+  
+  // svg {
+  //   fill: #17141d;
+  //   stroke-width: 2px;
+  // }
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
