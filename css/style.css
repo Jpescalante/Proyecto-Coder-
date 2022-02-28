@@ -24,23 +24,23 @@ header nav div ul li :hover:after {
 }
 
 #homePage {
-  background-image: url("../../src/assets/img/back5.jpg");
+  background-image: url("../../src/assets/img/backgroundhome.jpg");
 }
 
 #reviews {
-  background-image: url("../../src/assets/img/back6.jpg");
+  background-image: url("../../src/assets/img/backgroundreviews.jpg");
 }
 
 #productos {
-  background-image: url("../../src/assets/img/background-reviews-grande.jpg");
+  background-image: url("../../src/assets/img/backgroundproductos.jpg");
 }
 
 #pagina-contacto {
-  background-image: url("../../src/assets/img/back5.jpg");
+  background-image: url("../../src/assets/img/backgroundhome.jpg");
 }
 
 #pagina-productos {
-  background-image: url("../src/assets/img/background-reviews-grande.jpg");
+  background-image: url("../src/assets/img/backgroundproductos.jpg");
 }
 
 .container-video {
@@ -83,7 +83,6 @@ header nav div ul li :hover:after {
 }
 
 .img-container {
-  background-color: white;
   padding: 3rem 0.5rem 2rem 0.5rem;
   cursor: pointer;
 }
@@ -121,17 +120,8 @@ header nav div ul li :hover:after {
   color: white;
 }
 
-.boton-cart :hover {
-  background: yellowgreen;
-}
-
-.boton-comprar :hover {
-  background: violet;
-  color: white;
-}
-
 .producto-info {
-  background: #d3d5db;
+  background: rgba(14, 12, 12, 0.9);
   padding: 2rem;
 }
 
@@ -142,7 +132,7 @@ header nav div ul li :hover:after {
 }
 
 .producto-nombre {
-  color: black;
+  color: white;
   display: block;
   text-decoration: none;
   font-size: 1rem;
@@ -154,6 +144,7 @@ header nav div ul li :hover:after {
   padding-top: 0.6rem;
   padding-right: 0.6rem;
   display: inline-block;
+  color: white;
 }
 
 .container-carousel {

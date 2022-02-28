@@ -1,3 +1,4 @@
+//Estilo productos
 
 .container-producto {
   margin-bottom: 3%;
@@ -21,7 +22,6 @@
   cursor: pointer;
 }
 .img-container {
-  background-color: white;
   padding: 3rem 0.5rem 2rem 0.5rem;
   cursor: pointer;
 }
@@ -54,15 +54,9 @@
   background-color: black;
   color: white;
 }
-.boton-cart :hover {
-  background: yellowgreen;
-}
-.boton-comprar :hover {
-  background: violet;
-  color: white;
-}
+
 .producto-info {
-  background: rgb(211, 213, 219);
+  background: rgba(14, 12, 12, 0.9);
   padding: 2rem;
 }
 .producto-info-top {
@@ -71,7 +65,7 @@
   align-items: center;
 }
 .producto-nombre {
-  color: black;
+  color: white;
   display: block;
   text-decoration: none;
   font-size: 1rem;
@@ -82,4 +76,6 @@
   padding-top: 0.6rem;
   padding-right: 0.6rem;
   display: inline-block;
+  color:white;
+  
 }
