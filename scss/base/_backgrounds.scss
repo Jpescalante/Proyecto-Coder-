@@ -1,22 +1,28 @@
+//Bg seccion Home
 #homePage {
     background-image: url("../../src/assets/img/back5.jpg");
     @extend %background-section;
 }
+//Bg seccion Reviews
 
 #reviews {
     background-image: url("../../src/assets/img/back6.jpg");
     @extend %background-section;
 }
+//Bg seccion Productos
 
 #productos {
     background-image: url("../../src/assets/img/background-reviews-grande.jpg");
     @extend %background-section;
 }
+//Bg view Contacto
 
 #pagina-contacto {
     background-image: url("../../src/assets/img/back5.jpg");
     @extend %background-section;
 }
+//Bg view Productos
+
 #pagina-productos {
     background-image: url("../src/assets/img/background-reviews-grande.jpg");
     @extend %background-section;

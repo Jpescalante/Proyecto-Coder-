@@ -1,21 +1,18 @@
+//Estilos de texto
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
+
+//Parrafos del Home
 .parrafo-home {
   @extend %parrafos-main;
   margin-top: 8%;
   margin-left: 40%;
 }
 
-.parrafo-eventos {
-  @extend %parrafos-main;
-  margin-top: -30%;
-  margin-left: 55%;
-  margin-bottom: 5%;
-}
-
+//Titulos seccion y modal general
 .titulo {
   text-align: center;
   font-size: 2rem;
@@ -30,6 +27,7 @@ h3 {
   padding-bottom: 1vh;
   color: #010303;
 }
+//Textos footer
 h4 {
   text-align: center;
 }
